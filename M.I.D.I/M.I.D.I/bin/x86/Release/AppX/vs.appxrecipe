@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>DAD64038B5F1AFDC0962F8185B3A611B50A60AB8FD8EBAFD9FDD06020F1D3C9A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>108984DD2403D33BE55C8094381ECB21673D37506F6432F944BA4FE1A3130479</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>0054987e-bfff-4d02-ad4f-075142d9b4d0_1.0.0.0_x86__54009kxqm04w4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>0054987e-bfff-4d02-ad4f-075142d9b4d0_54009kxqm04w4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>0054987e-bfff-4d02-ad4f-075142d9b4d0</RegisteredPackageID>
@@ -28,7 +28,7 @@
     <AppXManifest Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-28T07:55:09.950</Modified>
+      <Modified>2016-12-29T22:28:40.894</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -71,26 +71,26 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-12-22T19:58:52.447</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\ClrCompression.dll">
-      <PackagePath>ClrCompression.dll</PackagePath>
-      <Modified>2015-07-22T20:08:02.000</Modified>
+    <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+      <Modified>2016-06-13T18:51:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\M.I.D.I.dll">
       <PackagePath>M.I.D.I.dll</PackagePath>
-      <Modified>2016-12-28T07:55:09.839</Modified>
+      <Modified>2016-12-29T22:28:40.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\M.I.D.I.exe">
       <PackagePath>M.I.D.I.exe</PackagePath>
-      <Modified>2016-12-28T07:55:09.933</Modified>
+      <Modified>2016-12-29T22:28:40.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\M.I.D.I.pdb">
       <PackagePath>M.I.D.I.pdb</PackagePath>
-      <Modified>2016-12-28T07:55:09.924</Modified>
+      <Modified>2016-12-29T22:28:40.874</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-28T07:54:55.159</Modified>
+      <Modified>2016-12-29T22:28:21.677</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

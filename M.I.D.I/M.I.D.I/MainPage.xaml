@@ -7,11 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="191" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
-        <Grid HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="833" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="191,0,0,0" BorderBrush="Gray" BorderThickness="1,0,0,0">
-            <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="135" Click="Add_Click"/>
-            <Button x:Name="Sync" Content="Sync" HorizontalAlignment="Left" Margin="151,10,0,0" VerticalAlignment="Top"  Height="35" Width="135" Click="Sync_Click"/>
-            <ListView x:Name="MusicFiles" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0.448,1.728" Margin="11,50,0,0"/>
+        <Grid HorizontalAlignment="Left" Width="191" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" BorderBrush="Gray" BorderThickness="0,0,1,0"/>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="191,0,0,50">
+            <GridView ItemsSource="{x:Bind MainModel.MusicModelList}">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="local:MusicModel">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="500" />
+                                <ColumnDefinition Width="500" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{x:Bind Title}" Grid.Column="0" Margin="10,0,0,10"/>
+                            <TextBlock Text="{x:Bind Size}" Grid.Column="1" Margin="10,0,0,10"/>
+                        </Grid>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </Grid>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="191,0,0,0" Height="50" VerticalAlignment="Bottom">
+            <Button x:Name="Add" Content="Add" HorizontalAlignment="Right" Margin="0,0,175,10" VerticalAlignment="Bottom" Click="Add_Click" Width="134" Height="35"/>
+            <Button x:Name="Sync" Content="Sync" HorizontalAlignment="Right" Margin="0,0,9,10" VerticalAlignment="Bottom" Click="Sync_Click" Width="132" Height="35"/>
         </Grid>
     </Grid>
 </Page>
