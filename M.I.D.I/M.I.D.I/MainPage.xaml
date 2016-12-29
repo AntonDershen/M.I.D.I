@@ -7,8 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="996" VerticalAlignment="Top" Width="256" Background="{ThemeResource AppBarBackground}" Margin="0,84,0,0" BorderBrush="Gray" BorderThickness="1"></Grid>
-        <Grid HorizontalAlignment="Left" Height="1001" VerticalAlignment="Top" Width="1664" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="256,84,0,-5" BorderBrush="Gray" BorderThickness="1"/>
-        <Grid HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="1920" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  BorderBrush="Gray" BorderThickness="1"/>
+        <Grid HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="191" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+        <Grid HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="833" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="191,0,0,0" BorderBrush="Gray" BorderThickness="1,0,0,0">
+            <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="135" Click="Add_Click"/>
+            <Button x:Name="Sync" Content="Sync" HorizontalAlignment="Left" Margin="151,10,0,0" VerticalAlignment="Top"  Height="35" Width="135" Click="Sync_Click"/>
+            <ListView x:Name="MusicFiles" HorizontalAlignment="Left" Height="580" VerticalAlignment="Top" Width="800" RenderTransformOrigin="0.448,1.728" Margin="11,50,0,0"/>
+        </Grid>
     </Grid>
 </Page>
