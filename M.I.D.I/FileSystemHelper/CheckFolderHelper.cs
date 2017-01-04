@@ -30,9 +30,9 @@ namespace FileSystemHelper
             }
             return info;
         }
-        private static async Task<string[]> FilesToInfo(StorageFile file)
+        public static async Task<string[]> FilesToInfo(StorageFile file)
         {
-            string[] info = new string[4];
+            string[] info = new string[2];
             info[0] = file.DisplayName;
             BasicProperties basicProperties = await file.GetBasicPropertiesAsync();
             info[1] = basicProperties.Size.ToString() + " байт";

@@ -17,7 +17,10 @@ namespace M.I.D.I
         {
             LoadMusicModelList();
         }
-
+        public void UpdateMusicModelList(string[] data)
+        {
+            MusicModelList.Add(Converter(data));
+        }
         private async void LoadMusicModelList()
         {
             MusicModelList = new ObservableCollection<MusicModel>();

@@ -26,7 +26,6 @@
         </Grid>
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="191,0,0,0" Height="50" VerticalAlignment="Bottom">
             <Button x:Name="Add" Content="Add" HorizontalAlignment="Right" Margin="0,0,175,10" VerticalAlignment="Bottom" Click="Add_Click" Width="134" Height="35"/>
-            <Button x:Name="Sync" Content="Sync" HorizontalAlignment="Right" Margin="0,0,9,10" VerticalAlignment="Bottom" Click="Sync_Click" Width="132" Height="35"/>
         </Grid>
     </Grid>
 </Page>

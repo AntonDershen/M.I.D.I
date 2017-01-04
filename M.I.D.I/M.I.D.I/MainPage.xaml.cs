@@ -2,6 +2,7 @@
 using Windows.UI.Xaml.Controls;
 using FileSystemHelper;
 using System.Collections.Generic;
+using Windows.Storage;
 
 namespace M.I.D.I
 {
@@ -14,13 +15,16 @@ namespace M.I.D.I
             InitializeComponent();
             MainModel = new MainPageModel();
         }
-        private void Add_Click(object sender, RoutedEventArgs e)
+        private async void Add_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialogHelper openFileDialog = new OpenFileDialogHelper();
-            openFileDialog.PickFiles();
-        }
-        private async void Sync_Click(object sender, RoutedEventArgs e)
-        {
+            IReadOnlyList<StorageFile> files = await openFileDialog.PickFiles();
+            foreach(StorageFile file in files)
+            {
+                await openFileDialog.CopyFiles(file);
+                string[] fileInfo = await CheckFolderHelper.FilesToInfo(file);
+                MainModel.UpdateMusicModelList(fileInfo);
+            }
         }
     }
 }
