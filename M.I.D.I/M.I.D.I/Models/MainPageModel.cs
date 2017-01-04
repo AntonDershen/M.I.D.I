@@ -21,6 +21,10 @@ namespace M.I.D.I
         {
             MusicModelList.Add(Converter(data));
         }
+        public void RemoveFromMusicModelList(string title)
+        {
+            MusicModelList.Remove(MusicModelList.FirstOrDefault(x => x.Title == title));
+        }
         private async void LoadMusicModelList()
         {
             MusicModelList = new ObservableCollection<MusicModel>();

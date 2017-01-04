@@ -28,13 +28,13 @@
     <AppXManifest Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-04T20:07:55.657</Modified>
+      <Modified>2017-01-04T20:49:06.770</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.exe">
       <PackagePath>entrypoint\M.I.D.I.exe</PackagePath>
-      <Modified>2017-01-04T20:07:54.987</Modified>
+      <Modified>2017-01-04T20:49:06.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dersh\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -494,11 +494,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\FileSystemHelper\bin\x86\Debug\FileSystemHelper.dll">
       <PackagePath>FileSystemHelper.dll</PackagePath>
-      <Modified>2017-01-04T20:07:52.751</Modified>
+      <Modified>2017-01-04T20:47:57.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\FileSystemHelper\bin\x86\Debug\Constants.dll">
       <PackagePath>Constants.dll</PackagePath>
-      <Modified>2017-01-04T19:56:16.934</Modified>
+      <Modified>2017-01-04T20:11:25.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -545,7 +545,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.xr.xml">
       <PackagePath>M.I.D.I.xr.xml</PackagePath>
-      <Modified>2017-01-04T19:56:20.986</Modified>
+      <Modified>2017-01-04T20:23:36.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -554,11 +554,11 @@
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-04T20:07:55.472</Modified>
+      <Modified>2017-01-04T20:39:40.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\M.I.D.I.exe">
       <PackagePath>M.I.D.I.exe</PackagePath>
-      <Modified>2017-01-04T20:07:55.657</Modified>
+      <Modified>2017-01-04T20:49:06.767</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

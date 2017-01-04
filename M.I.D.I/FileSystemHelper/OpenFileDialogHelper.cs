@@ -24,7 +24,7 @@ namespace FileSystemHelper
             IReadOnlyList<StorageFile> files = await fop.PickMultipleFilesAsync();
             return files;
         }
-        public async Task CopyFiles(StorageFile file)
+        public async Task CopyFile(StorageFile file)
         {
             StorageFolder musicLibrary = await KnownFolders.MusicLibrary.GetFolderAsync(FileSystemConstants.MusicStorageFolder);
             await file.CopyAsync(musicLibrary, file.Name, NameCollisionOption.GenerateUniqueName);
@@ -36,6 +36,12 @@ namespace FileSystemHelper
             {
                 await file.CopyAsync(musicLibrary, file.Name, NameCollisionOption.GenerateUniqueName);
             }
+        }
+        public async void RemoveFile(string fileName)
+        {
+            StorageFolder musicLibrary = await KnownFolders.MusicLibrary.GetFolderAsync(FileSystemConstants.MusicStorageFolder);
+            StorageFile file = await musicLibrary.GetFileAsync(fileName + ".mid");
+            await file.DeleteAsync();
         }
     }
 }

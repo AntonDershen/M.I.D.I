@@ -9,7 +9,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid HorizontalAlignment="Left" Width="191" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" BorderBrush="Gray" BorderThickness="0,0,1,0"/>
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="191,0,0,50">
-            <GridView ItemsSource="{x:Bind MainModel.MusicModelList}">
+            <GridView x:Name="GridView" ItemsSource="{x:Bind MainModel.MusicModelList}" SelectionMode="Extended" SelectionChanged="GridView_SelectionChanged">
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="local:MusicModel">
                         <Grid>
@@ -26,6 +26,7 @@
         </Grid>
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="191,0,0,0" Height="50" VerticalAlignment="Bottom">
             <Button x:Name="Add" Content="Add" HorizontalAlignment="Right" Margin="0,0,175,10" VerticalAlignment="Bottom" Click="Add_Click" Width="134" Height="35"/>
+            <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Click="Remove_Click"  Width="134" Height="35" IsEnabled="False"/>
         </Grid>
     </Grid>
 </Page>
