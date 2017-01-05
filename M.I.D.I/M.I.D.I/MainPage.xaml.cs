@@ -26,6 +26,8 @@ namespace M.I.D.I
                 await openFileDialog.CopyFile(file);
                 string[] fileInfo = await CheckFolderHelper.FilesToInfo(file);
                 MainModel.UpdateMusicModelList(fileInfo);
+                MidiConverter.MidiConverter converter = new MidiConverter.MidiConverter(file);
+                await converter.ConvertToNotes();
             }
             Add.IsEnabled = true;
         }

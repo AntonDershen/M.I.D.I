@@ -95,7 +95,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="await.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -137,6 +136,10 @@
     <ProjectReference Include="..\FileSystemHelper\FileSystemHelper.csproj">
       <Project>{e1273652-6d07-4b11-aa5b-7c1952e82df7}</Project>
       <Name>FileSystemHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MidiConverter\MidiConverter.csproj">
+      <Project>{df5da534-ba54-48e1-a410-d2603f893b12}</Project>
+      <Name>MidiConverter</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

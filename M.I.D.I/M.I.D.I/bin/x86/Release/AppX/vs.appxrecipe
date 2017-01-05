@@ -28,7 +28,7 @@
     <AppXManifest Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-29T22:28:40.894</Modified>
+      <Modified>2017-01-05T17:45:09.906</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -69,7 +69,7 @@
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-22T19:58:52.447</Modified>
+      <Modified>2017-01-05T16:42:46.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -77,20 +77,20 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\M.I.D.I.dll">
       <PackagePath>M.I.D.I.dll</PackagePath>
-      <Modified>2016-12-29T22:28:40.758</Modified>
+      <Modified>2017-01-05T17:45:09.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\M.I.D.I.exe">
       <PackagePath>M.I.D.I.exe</PackagePath>
-      <Modified>2016-12-29T22:28:40.883</Modified>
+      <Modified>2017-01-05T17:45:09.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\M.I.D.I.pdb">
       <PackagePath>M.I.D.I.pdb</PackagePath>
-      <Modified>2016-12-29T22:28:40.874</Modified>
+      <Modified>2017-01-05T17:45:09.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-29T22:28:21.677</Modified>
+      <Modified>2017-01-05T17:35:32.591</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
