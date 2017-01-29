@@ -18,3 +18,26 @@ c:\users\dersh\documents\visual studio 2015\Projects\M.I.D.I\BussinessLayer\obj\
 c:\users\dersh\documents\visual studio 2015\Projects\M.I.D.I\BussinessLayer\obj\x86\Debug\qualifiers.txt
 c:\users\dersh\documents\visual studio 2015\Projects\M.I.D.I\BussinessLayer\obj\x86\Debug\qualifiers.txt.intermediate
 c:\users\dersh\documents\visual studio 2015\Projects\M.I.D.I\BussinessLayer\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\BussinessLogic.dll
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\BussinessLogic.pdb
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\BussinessLogic.pri
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\BussinessLogic.Interface.dll
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\DataAccess.Interface.dll
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\BussinessLogic.Interface.pdb
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\BussinessLogic.Interface.pri
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\DataAccess.Interface.pdb
+E:\M.I.D.I\M.I.D.I\BussinessLogic\bin\x86\Debug\DataAccess.Interface.pri
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\BussinessLogic.csprojResolveAssemblyReference.cache
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\BussinessLogic.dll
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\BussinessLogic.pdb
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\priconfig.xml
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\priconfig.xml.intermediate
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\layout.resfiles
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\layout.resfiles.intermediate
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\resources.resfiles
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\resources.resfiles.intermediate
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\pri.resfiles
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\pri.resfiles.intermediate
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\qualifiers.txt
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\qualifiers.txt.intermediate
+E:\M.I.D.I\M.I.D.I\BussinessLogic\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt

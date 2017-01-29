@@ -12,14 +12,10 @@
 
     <SplitView x:Name="SplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="50" HorizontalAlignment="Left" Width="1280">
         <SplitView.Pane>
-            <StackPanel Background="Gray">
+            <StackPanel Background="Gray" Name="DevicePanel">
                 <StackPanel Orientation="Horizontal">
                     <Button x:Name="PCButton" FontFamily="Segoe UI Symbol" Content="&#xe212;"
                    Width="50" Height="50" FontSize="25" Background="Transparent" Foreground="White"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <Button x:Name="FloppyButton" FontFamily="Segoe UI Symbol" Content="&#x1f4be;"
-                       Width="50" Height="50" FontSize="25" Background="Transparent" Foreground="White"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Button x:Name="OptionsButton" FontFamily="Segoe UI Symbol" Content="&#xe115;"

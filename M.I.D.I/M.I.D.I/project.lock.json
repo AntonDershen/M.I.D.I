@@ -2661,6 +2661,56 @@
             "rid": "win10-x86"
           }
         }
+      },
+      "Windows-Remote-Arduino/1.4.0": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win10-arm/native/Microsoft.Maker.Firmata.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.Maker.RemoteWiring.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-arm/native/Microsoft.Maker.Serial.dll": {
+            "assetType": "native",
+            "rid": "win10-arm"
+          },
+          "runtimes/win10-x64/native/Microsoft.Maker.Firmata.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/Microsoft.Maker.RemoteWiring.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x64/native/Microsoft.Maker.Serial.dll": {
+            "assetType": "native",
+            "rid": "win10-x64"
+          },
+          "runtimes/win10-x86/native/Microsoft.Maker.Firmata.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/Microsoft.Maker.RemoteWiring.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          },
+          "runtimes/win10-x86/native/Microsoft.Maker.Serial.dll": {
+            "assetType": "native",
+            "rid": "win10-x86"
+          }
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm": {
@@ -5308,6 +5358,23 @@
         },
         "native": {
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
+        }
+      },
+      "Windows-Remote-Arduino/1.4.0": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/Microsoft.Maker.Firmata.dll": {},
+          "runtimes/win10-arm/native/Microsoft.Maker.RemoteWiring.dll": {},
+          "runtimes/win10-arm/native/Microsoft.Maker.Serial.dll": {}
         }
       }
     },
@@ -7996,6 +8063,23 @@
         "native": {
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
         }
+      },
+      "Windows-Remote-Arduino/1.4.0": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-arm/native/Microsoft.Maker.Firmata.dll": {},
+          "runtimes/win10-arm/native/Microsoft.Maker.RemoteWiring.dll": {},
+          "runtimes/win10-arm/native/Microsoft.Maker.Serial.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-x64": {
@@ -10655,6 +10739,23 @@
         },
         "native": {
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
+        }
+      },
+      "Windows-Remote-Arduino/1.4.0": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/Microsoft.Maker.Firmata.dll": {},
+          "runtimes/win10-x64/native/Microsoft.Maker.RemoteWiring.dll": {},
+          "runtimes/win10-x64/native/Microsoft.Maker.Serial.dll": {}
         }
       }
     },
@@ -13355,6 +13456,23 @@
         "native": {
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
         }
+      },
+      "Windows-Remote-Arduino/1.4.0": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x64/native/Microsoft.Maker.Firmata.dll": {},
+          "runtimes/win10-x64/native/Microsoft.Maker.RemoteWiring.dll": {},
+          "runtimes/win10-x64/native/Microsoft.Maker.Serial.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-x86": {
@@ -16014,6 +16132,23 @@
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
+        }
+      },
+      "Windows-Remote-Arduino/1.4.0": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/Microsoft.Maker.Firmata.dll": {},
+          "runtimes/win10-x86/native/Microsoft.Maker.RemoteWiring.dll": {},
+          "runtimes/win10-x86/native/Microsoft.Maker.Serial.dll": {}
         }
       }
     },
@@ -18713,6 +18848,23 @@
         },
         "native": {
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
+        }
+      },
+      "Windows-Remote-Arduino/1.4.0": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Maker.Firmata.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd": {},
+          "lib/uap10.0/Microsoft.Maker.Serial.winmd": {}
+        },
+        "native": {
+          "runtimes/win10-x86/native/Microsoft.Maker.Firmata.dll": {},
+          "runtimes/win10-x86/native/Microsoft.Maker.RemoteWiring.dll": {},
+          "runtimes/win10-x86/native/Microsoft.Maker.Serial.dll": {}
         }
       }
     }
@@ -25455,13 +25607,34 @@
         "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll",
         "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll"
       ]
+    },
+    "Windows-Remote-Arduino/1.4.0": {
+      "sha512": "vPlj+ezITu1WuVgO5SFSncKJLWDjy8EiQfmHO45uan0/Lo74/7TDM9bz/02+JpVAytmazcx6gl16E6EK/gSjyg==",
+      "type": "package",
+      "files": [
+        "Windows-Remote-Arduino.1.4.0.nupkg.sha512",
+        "Windows-Remote-Arduino.nuspec",
+        "lib/uap10.0/Microsoft.Maker.Firmata.winmd",
+        "lib/uap10.0/Microsoft.Maker.RemoteWiring.winmd",
+        "lib/uap10.0/Microsoft.Maker.Serial.winmd",
+        "runtimes/win10-arm/native/Microsoft.Maker.Firmata.dll",
+        "runtimes/win10-arm/native/Microsoft.Maker.RemoteWiring.dll",
+        "runtimes/win10-arm/native/Microsoft.Maker.Serial.dll",
+        "runtimes/win10-x64/native/Microsoft.Maker.Firmata.dll",
+        "runtimes/win10-x64/native/Microsoft.Maker.RemoteWiring.dll",
+        "runtimes/win10-x64/native/Microsoft.Maker.Serial.dll",
+        "runtimes/win10-x86/native/Microsoft.Maker.Firmata.dll",
+        "runtimes/win10-x86/native/Microsoft.Maker.RemoteWiring.dll",
+        "runtimes/win10-x86/native/Microsoft.Maker.Serial.dll"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "Microsoft.Toolkit.Uwp.UI.Controls >= 1.2.0",
-      "Portable.Ninject >= 3.3.1"
+      "Portable.Ninject >= 3.3.1",
+      "Windows-Remote-Arduino >= 1.4.0"
     ],
     "UAP,Version=v10.0": []
   }

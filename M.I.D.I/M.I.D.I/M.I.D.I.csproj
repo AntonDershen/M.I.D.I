@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="DataModels\MusicModel.cs" />
     <Compile Include="DataModels\MusicListView.cs" />
+    <Compile Include="DeviceConnector\DeviceConnector.cs" />
     <Compile Include="Handlers\Button.cs" />
     <Compile Include="Handlers\SplitView.cs" />
     <Compile Include="Infrastructure\DependencyResolver.cs" />

@@ -2,7 +2,8 @@
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "Microsoft.Toolkit.Uwp.UI.Controls": "1.2.0",
-    "Portable.Ninject": "3.3.1"
+    "Portable.Ninject": "3.3.1",
+    "Windows-Remote-Arduino": "1.4.0"
   },
   "frameworks": {
     "uap10.0": {}
