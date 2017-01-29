@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>3E0AE8BE457C0ECEDC2F94CF154DCF9A00DD86E6C3B51ABD024DBF7C7FC5E270</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>7DAB2B526E51E47F91E4228A0C0EB4A001B22326891495B0025FFC8AB2CAF423</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>dd67b896-1f71-4ac7-a983-c180c90a7a1f_1.0.0.0_x86__54009kxqm04w4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>dd67b896-1f71-4ac7-a983-c180c90a7a1f_54009kxqm04w4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>dd67b896-1f71-4ac7-a983-c180c90a7a1f</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-29T11:27:25.142</Modified>
+      <Modified>2017-01-29T16:26:59.635</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.exe">
       <PackagePath>entrypoint\M.I.D.I.exe</PackagePath>
-      <Modified>2017-01-29T11:27:19.753</Modified>
+      <Modified>2017-01-29T16:26:52.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dersh\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Hosting.Abstractions.dll</PackagePath>
@@ -650,23 +650,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\BussinessLogic.Interface.dll">
       <PackagePath>BussinessLogic.Interface.dll</PackagePath>
-      <Modified>2017-01-29T11:27:14.652</Modified>
+      <Modified>2017-01-29T15:57:56.500</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\ResolveModule\bin\x86\Debug\ResolveModule.dll">
       <PackagePath>ResolveModule.dll</PackagePath>
-      <Modified>2017-01-29T11:27:16.926</Modified>
+      <Modified>2017-01-29T15:57:58.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\DataAccess.Interface.dll">
       <PackagePath>DataAccess.Interface.dll</PackagePath>
-      <Modified>2017-01-29T11:27:13.926</Modified>
+      <Modified>2017-01-29T15:57:55.770</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\ResolveModule\bin\x86\Debug\DataAccess.dll">
       <PackagePath>DataAccess.dll</PackagePath>
-      <Modified>2017-01-29T11:27:16.142</Modified>
+      <Modified>2017-01-29T15:57:57.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\ResolveModule\bin\x86\Debug\BussinessLogic.dll">
       <PackagePath>BussinessLogic.dll</PackagePath>
-      <Modified>2017-01-29T11:27:16.206</Modified>
+      <Modified>2017-01-29T15:57:57.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dersh\.nuget\packages\Win2D.uwp\1.18.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -793,11 +793,11 @@
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-29T11:27:21.230</Modified>
+      <Modified>2017-01-29T16:26:55.879</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\M.I.D.I\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\M.I.D.I.exe">
       <PackagePath>M.I.D.I.exe</PackagePath>
-      <Modified>2017-01-29T11:27:25.133</Modified>
+      <Modified>2017-01-29T16:26:59.622</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

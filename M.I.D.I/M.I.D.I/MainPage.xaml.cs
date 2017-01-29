@@ -3,6 +3,8 @@ using M.I.D.I.Infrastructure;
 using M.I.D.I.DataModels;
 using Windows.Devices.SerialCommunication;
 using Windows.ApplicationModel.Core;
+using Microsoft.Maker.RemoteWiring;
+using Microsoft.Maker.Serial;
 
 namespace M.I.D.I
 {
@@ -19,5 +21,14 @@ namespace M.I.D.I
             dependencyResolver = new DependencyResolver();
         }
 
+        private void LED_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            devices[0].RemoteDevice.digitalWrite(13, PinState.HIGH);
+        }
+
+        private void LEDOFF_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            devices[0].RemoteDevice.digitalWrite(13, PinState.LOW);
+        }
     }
 }

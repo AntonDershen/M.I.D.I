@@ -28,6 +28,8 @@
                 <Grid Background="White" Margin="-100,0,0,0">
                     <Button x:Name="buttonAdd" Background="Gray" Content="Add" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Click="Add_Click" Height="45" Width="140"/>
                     <Button x:Name="buttonRemove" Background="Gray" Content="Remove" HorizontalAlignment="Left" Margin="275,10,0,0" VerticalAlignment="Top" Click="Remove_Click" Height="45" Width="140" IsEnabled="False"/>
+                    <Button x:Name="LEDON" Background="Gray" Content="LED ON" HorizontalAlignment="Left" Margin="430,10,0,0" VerticalAlignment="Top" Click="LED_Click"  Height="45" Width="140"/>
+                    <Button x:Name="LEDOFF" Background="Gray" Content="LED OFF" HorizontalAlignment="Left" Margin="585,10,0,0" VerticalAlignment="Top" Click="LEDOFF_Click"  Height="45" Width="140"/>
                     <ListView x:Name="listView" Height="585" Margin="120,90,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="440" Loading="listView_Loading" SelectionChanged="listView_SelectionChanged" SelectionMode="Extended">
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="dataModels:MusicModel">
@@ -40,6 +42,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
+                    
                 </Grid>
             </Frame>
         </SplitView.Content>

@@ -1,12 +1,8 @@
-﻿using Microsoft.Maker.Firmata;
-using Microsoft.Maker.RemoteWiring;
+﻿using Microsoft.Maker.RemoteWiring;
 using Microsoft.Maker.Serial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.ApplicationModel.Core;
 using Windows.Devices.Enumeration;
 using Windows.Devices.SerialCommunication;
 using Windows.UI;
@@ -44,7 +40,10 @@ namespace M.I.D.I
              {
                  StackPanel stackPanel = AddingStackPanel(device.Id);
                  DevicePanel.Children.Add(stackPanel);
-                 DeviceInformations deviceInformations = new DeviceInformations(device, null, stackPanel);
+                 IStream usbSerial = new UsbSerial(device);
+                 RemoteDevice arduino = new RemoteDevice(usbSerial);
+                 usbSerial.begin(57600, SerialConfig.SERIAL_8N1);
+                 DeviceInformations deviceInformations = new DeviceInformations(device, usbSerial, arduino, stackPanel);
                  devices.Add(deviceInformations);
              });
         }
@@ -86,20 +85,20 @@ namespace M.I.D.I
             }
             return aqs;
         }
-
     }
     public class DeviceInformations
     {
         public DeviceInformation DeviceInformation { get; private set; }
         public RemoteDevice RemoteDevice { get; private set; }
         public StackPanel StackPanel { get; private set; }
-
-        public DeviceInformations(DeviceInformation deviceInformation,
+        public IStream Serial { get; private set; }
+        public DeviceInformations(DeviceInformation deviceInformation,IStream serial,
             RemoteDevice remoteDevice, StackPanel stackPanel)
         {
             this.DeviceInformation = deviceInformation;
             this.RemoteDevice = remoteDevice;
             this.StackPanel = stackPanel;
+            this.Serial = serial;
         }
     }
 }
