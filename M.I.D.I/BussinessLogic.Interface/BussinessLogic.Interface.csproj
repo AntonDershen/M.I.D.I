@@ -107,10 +107,14 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\AlbumEntityToAlbumModel.cs" />
+    <Compile Include="Converters\ConvertEntityToConvertModel.cs" />
     <Compile Include="Converters\MusicEntityToMusicModel.cs" />
+    <Compile Include="Converters\NoteEntityToNoteModel.cs" />
     <Compile Include="Converters\StorageFileToMusicEntity.cs" />
     <Compile Include="Entities\MusicEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IConvertService.cs" />
     <Compile Include="Services\IMusicService.cs" />
     <EmbeddedResource Include="Properties\BussinessLogic.Interface.rd.xml" />
   </ItemGroup>

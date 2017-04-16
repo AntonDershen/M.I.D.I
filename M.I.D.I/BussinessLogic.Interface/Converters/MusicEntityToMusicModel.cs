@@ -16,8 +16,10 @@ namespace BussinessLogic.Interface.Converters
             {
                 MusicModelId = musicEntity.MusicEntityId,
                 Content = musicEntity.Content,
-                ConvertedContent = musicEntity.ConvertedContent,
-                Name = musicEntity.Name
+                Name = musicEntity.Name,
+                Date = musicEntity.Date,
+                Extension = musicEntity.Extension,
+                ConvertedMusicModel = musicEntity.ConvertedMusicEntity.ToConvertedMusicModel()
             };
         }
         public static MusicEntity ToMusicEntity(this MusicModel musicModel)
@@ -26,8 +28,10 @@ namespace BussinessLogic.Interface.Converters
             {
                 MusicEntityId = musicModel.MusicModelId,
                 Content = musicModel.Content,
-                ConvertedContent = musicModel.ConvertedContent,
-                Name = musicModel.Name
+                Name = musicModel.Name,
+                Date = musicModel.Date,
+                Extension = musicModel.Extension,
+                ConvertedMusicEntity = musicModel.ConvertedMusicModel.ToConvertedMusicEntity()
             };
         }
     }

@@ -10,7 +10,34 @@ namespace DataAccess.Interface.EntityFramework
     {
         public int MusicModelId { get; set; }
         public string Name { get; set; }
+        public string Extension { get; set; }
+        public DateTime Date { get; set; }
         public byte[] Content { get; set; }
-        public byte[] ConvertedContent { get; set; }
+        public virtual ConvertedMusicModel ConvertedMusicModel { get; set; }
+        public virtual IEnumerable<AlbumModel> Albums { get; set; }
+    }
+
+    public class ConvertedMusicModel
+    {
+        public int ConvertedMusicModelId { get; set; }
+        public DateTime ConvertedDate { get; set; }
+        public virtual IEnumerable<NoteModel> Notes { get; set; }
+    }
+
+    public class NoteModel
+    {
+        public int NoteModelId { get; set; }
+        public double RealTime;
+        public int NoteNumber;
+        public int Channel;
+        public int CommandCode;
+    }
+
+    public class AlbumModel
+    {
+        public int AlbumModelId { get; set; }
+        public string Name { get; set; }
+        public DateTime Date { get; set; }
+        public virtual IEnumerable<MusicModel> MusicModels { get; set; }
     }
 }

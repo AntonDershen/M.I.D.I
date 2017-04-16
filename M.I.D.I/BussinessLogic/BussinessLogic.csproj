@@ -107,7 +107,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\ConvertMIDI.cs" />
+    <Compile Include="ConvertService\ConvertMIDI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\MusicService.cs" />
     <EmbeddedResource Include="Properties\BussinessLayer.rd.xml" />

@@ -7,6 +7,7 @@ using BussinessLogic.Interface.Entities;
 using BussinessLogic.Interface.Services;
 using DataAccess.Interface.Repositories;
 using System;
+using BussinessLogic.ConvertService;
 
 namespace BussinessLogic.Services
 {
@@ -20,11 +21,18 @@ namespace BussinessLogic.Services
         public async Task<MusicEntity> AddFile(StorageFile file)
         {
             MusicEntity musicEntity = await file.ConvertStorageFile();
-            ConvertMIDI convertMIDI = new ConvertMIDI(musicEntity.Content);
-            musicEntity.ConvertedContent = convertMIDI.ConvertedData;
+            ConvertedMusicEntity convertedMusicEntity = GetConvertedMusicEntity(musicEntity);
             musicEntity = unitOfWork.MusicRepository.AddFile(musicEntity.ToMusicModel()).ToMusicEntity();
             unitOfWork.Save();
             return musicEntity;
+        }
+        private ConvertedMusicEntity GetConvertedMusicEntity(MusicEntity musicEntity)
+        {
+            ConvertMIDI convertMIDI = new ConvertMIDI(musicEntity.Content);
+            ConvertedMusicEntity convertedMusicEntity = new ConvertedMusicEntity();
+            convertedMusicEntity.ConvertedDate = DateTime.Now;
+            convertedMusicEntity.Notes = convertMIDI.GetNotes();
+            return convertedMusicEntity;
         }
         public IEnumerable<MusicEntity> GetFiles()
         {
