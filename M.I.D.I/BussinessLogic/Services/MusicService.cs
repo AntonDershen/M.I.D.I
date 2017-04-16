@@ -21,14 +21,14 @@ namespace BussinessLogic.Services
         public async Task<MusicEntity> AddFile(StorageFile file)
         {
             MusicEntity musicEntity = await file.ConvertStorageFile();
-            ConvertedMusicEntity convertedMusicEntity = GetConvertedMusicEntity(musicEntity);
+            ConvertedMusicEntity convertedMusicEntity = GetConvertedMusicEntity(musicEntity, file);
             musicEntity = unitOfWork.MusicRepository.AddFile(musicEntity.ToMusicModel()).ToMusicEntity();
             unitOfWork.Save();
             return musicEntity;
         }
-        private ConvertedMusicEntity GetConvertedMusicEntity(MusicEntity musicEntity)
+        private ConvertedMusicEntity GetConvertedMusicEntity(MusicEntity musicEntity,StorageFile storageFile)
         {
-            ConvertMIDI convertMIDI = new ConvertMIDI(musicEntity.Content);
+            ConvertMIDI convertMIDI = new ConvertMIDI(storageFile.Path);
             ConvertedMusicEntity convertedMusicEntity = new ConvertedMusicEntity();
             convertedMusicEntity.ConvertedDate = DateTime.Now;
             convertedMusicEntity.Notes = convertMIDI.GetNotes();
