@@ -14,7 +14,6 @@ namespace DataAccess.Interface.EntityFramework
         public DateTime Date { get; set; }
         public byte[] Content { get; set; }
         public virtual ConvertedMusicModel ConvertedMusicModel { get; set; }
-        public virtual IEnumerable<AlbumModel> Albums { get; set; }
     }
 
     public class ConvertedMusicModel
@@ -27,10 +26,10 @@ namespace DataAccess.Interface.EntityFramework
     public class NoteModel
     {
         public int NoteModelId { get; set; }
-        public double RealTime;
-        public int NoteNumber;
-        public int Channel;
-        public int CommandCode;
+        public double RealTime { get; set; }
+        public int NoteNumber { get; set; }
+        public int Channel { get; set; }
+        public int CommandCode { get; set; }
     }
 
     public class AlbumModel
