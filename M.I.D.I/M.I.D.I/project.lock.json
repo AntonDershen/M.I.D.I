@@ -27559,19 +27559,19 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "E:\\Диплом\\M.I.D.I\\M.I.D.I\\M.I.D.I.csproj",
+      "projectUniqueName": "E:\\Games\\MIDI\\M.I.D.I\\M.I.D.I\\M.I.D.I.csproj",
       "projectName": "M.I.D.I",
-      "projectPath": "E:\\Диплом\\M.I.D.I\\M.I.D.I\\M.I.D.I.csproj",
-      "projectJsonPath": "E:\\Диплом\\M.I.D.I\\M.I.D.I\\project.json",
+      "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\M.I.D.I\\M.I.D.I.csproj",
+      "projectJsonPath": "E:\\Games\\MIDI\\M.I.D.I\\M.I.D.I\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "E:\\Диплом\\M.I.D.I\\BussinessLogic.Interface\\BussinessLogic.Interface.csproj": {
-              "projectPath": "E:\\Диплом\\M.I.D.I\\BussinessLogic.Interface\\BussinessLogic.Interface.csproj"
+            "E:\\Games\\MIDI\\M.I.D.I\\BussinessLogic.Interface\\BussinessLogic.Interface.csproj": {
+              "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\BussinessLogic.Interface\\BussinessLogic.Interface.csproj"
             },
-            "E:\\Диплом\\M.I.D.I\\ResolveModule\\ResolveModule.csproj": {
-              "projectPath": "E:\\Диплом\\M.I.D.I\\ResolveModule\\ResolveModule.csproj"
+            "E:\\Games\\MIDI\\M.I.D.I\\ResolveModule\\ResolveModule.csproj": {
+              "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\ResolveModule\\ResolveModule.csproj"
             }
           }
         }

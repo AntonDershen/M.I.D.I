@@ -26274,16 +26274,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "E:\\Диплом\\M.I.D.I\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "E:\\Диплом\\M.I.D.I\\DataAccess\\DataAccess.csproj",
-      "projectJsonPath": "E:\\Диплом\\M.I.D.I\\DataAccess\\project.json",
+      "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess\\DataAccess.csproj",
+      "projectJsonPath": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "E:\\Диплом\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj": {
-              "projectPath": "E:\\Диплом\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj"
+            "E:\\Games\\MIDI\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj": {
+              "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj"
             }
           }
         }

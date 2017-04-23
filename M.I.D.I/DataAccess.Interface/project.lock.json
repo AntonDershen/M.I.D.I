@@ -26208,10 +26208,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "E:\\Диплом\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj",
+      "projectUniqueName": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj",
       "projectName": "DataAccess.Interface",
-      "projectPath": "E:\\Диплом\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj",
-      "projectJsonPath": "E:\\Диплом\\M.I.D.I\\DataAccess.Interface\\project.json",
+      "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj",
+      "projectJsonPath": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess.Interface\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

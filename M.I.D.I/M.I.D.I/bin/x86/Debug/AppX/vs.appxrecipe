@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>dd67b896-1f71-4ac7-a983-c180c90a7a1f</PackageIdentityName>
     <PackageIdentityPublisher>CN=dersh</PackageIdentityPublisher>
-    <IntermediateOutputPath>E:\Диплом\M.I.D.I\M.I.D.I\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Games\MIDI\M.I.D.I\M.I.D.I\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>E:\Диплом\M.I.D.I\M.I.D.I\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>1E28F122B33AF9E84A3D25D4DCBFB6E66922D64A7AFC5F34B49C26759ECF555F</RegisteredManifestChecksum>
+    <LayoutDir>E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>2C4EE6718F8DE98211E46E71AFDEABAD1B294CBC2A95F03DF1D5EFEF5D4EE2E9</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>dd67b896-1f71-4ac7-a983-c180c90a7a1f_1.0.0.0_x86__54009kxqm04w4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>dd67b896-1f71-4ac7-a983-c180c90a7a1f_54009kxqm04w4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>dd67b896-1f71-4ac7-a983-c180c90a7a1f</RegisteredPackageID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="E:\Диплом\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-14T11:10:20.085</Modified>
+      <Modified>2017-04-23T21:12:51.216</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.exe">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.exe">
       <PackagePath>entrypoint\M.I.D.I.exe</PackagePath>
-      <Modified>2017-04-14T11:10:02.192</Modified>
+      <Modified>2017-04-23T21:12:36.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dersh\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Hosting.Abstractions.dll</PackagePath>
@@ -651,25 +651,29 @@
       <PackagePath>Microsoft.Maker.Serial.dll</PackagePath>
       <Modified>2016-05-18T08:37:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\BussinessLogic.Interface.dll">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\BussinessLogic.Interface.dll">
       <PackagePath>BussinessLogic.Interface.dll</PackagePath>
-      <Modified>2017-04-14T11:09:55.550</Modified>
+      <Modified>2017-04-23T21:12:27.294</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\ResolveModule\bin\x86\Debug\ResolveModule.dll">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\ResolveModule.dll">
       <PackagePath>ResolveModule.dll</PackagePath>
-      <Modified>2017-04-14T11:09:58.281</Modified>
+      <Modified>2017-04-23T21:12:30.778</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\DataAccess.Interface.dll">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\DataAccess.Interface.dll">
       <PackagePath>DataAccess.Interface.dll</PackagePath>
-      <Modified>2017-04-14T11:09:53.463</Modified>
+      <Modified>2017-04-23T21:12:23.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\ResolveModule\bin\x86\Debug\DataAccess.dll">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\DataAccess.dll">
       <PackagePath>DataAccess.dll</PackagePath>
-      <Modified>2017-04-14T11:09:57.306</Modified>
+      <Modified>2017-04-23T21:12:29.170</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\ResolveModule\bin\x86\Debug\BussinessLogic.dll">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\BussinessLogic.dll">
       <PackagePath>BussinessLogic.dll</PackagePath>
-      <Modified>2017-04-14T11:09:56.873</Modified>
+      <Modified>2017-04-23T21:12:29.182</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\NAudio.dll">
+      <PackagePath>NAudio.dll</PackagePath>
+      <Modified>2017-04-17T21:52:34.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dersh\.nuget\packages\Win2D.uwp\1.18.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -687,51 +691,55 @@
       <PackagePath>Microsoft.Maker.Serial.winmd</PackagePath>
       <Modified>2016-05-18T08:37:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-04-14T10:40:36.820</Modified>
+      <Modified>2017-04-17T21:52:34.273</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-04-14T10:40:36.773</Modified>
+      <Modified>2017-04-17T21:52:34.195</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-14T10:40:36.773</Modified>
+      <Modified>2017-04-17T21:52:34.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-14T10:40:36.774</Modified>
+      <Modified>2017-04-17T21:52:34.197</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-14T10:40:36.775</Modified>
+      <Modified>2017-04-17T21:52:34.198</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-14T10:40:36.776</Modified>
+      <Modified>2017-04-17T21:52:34.199</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-14T10:40:36.776</Modified>
+      <Modified>2017-04-17T21:52:34.200</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-14T10:40:36.777</Modified>
+      <Modified>2017-04-17T21:52:34.200</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.xr.xml">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.xr.xml">
       <PackagePath>M.I.D.I.xr.xml</PackagePath>
-      <Modified>2017-04-14T10:40:40.619</Modified>
+      <Modified>2017-04-17T21:52:37.942</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\DataAccess.Interface\DataAccess.csproj">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\DataAccess.Interface\DataAccess.csproj">
       <PackagePath>DataAccess.Interface\DataAccess.csproj</PackagePath>
-      <Modified>2017-04-14T10:40:36.686</Modified>
+      <Modified>2017-04-17T21:52:34.083</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\BussinessLogic\dll\naudio.dll">
+      <PackagePath>BussinessLogic\dll\naudio.dll</PackagePath>
+      <Modified>2017-04-17T21:52:34.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -793,14 +801,14 @@
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml</PackagePath>
       <Modified>2016-11-15T14:24:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-14T11:10:07.998</Modified>
+      <Modified>2017-04-23T21:12:44.843</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Диплом\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\M.I.D.I.exe">
+    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\M.I.D.I.exe">
       <PackagePath>M.I.D.I.exe</PackagePath>
-      <Modified>2017-04-14T11:10:20.085</Modified>
+      <Modified>2017-04-23T21:12:51.202</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

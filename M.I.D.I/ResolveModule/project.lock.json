@@ -26557,25 +26557,25 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "E:\\Диплом\\M.I.D.I\\ResolveModule\\ResolveModule.csproj",
+      "projectUniqueName": "E:\\Games\\MIDI\\M.I.D.I\\ResolveModule\\ResolveModule.csproj",
       "projectName": "ResolveModule",
-      "projectPath": "E:\\Диплом\\M.I.D.I\\ResolveModule\\ResolveModule.csproj",
-      "projectJsonPath": "E:\\Диплом\\M.I.D.I\\ResolveModule\\project.json",
+      "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\ResolveModule\\ResolveModule.csproj",
+      "projectJsonPath": "E:\\Games\\MIDI\\M.I.D.I\\ResolveModule\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "E:\\Диплом\\M.I.D.I\\BussinessLogic.Interface\\BussinessLogic.Interface.csproj": {
-              "projectPath": "E:\\Диплом\\M.I.D.I\\BussinessLogic.Interface\\BussinessLogic.Interface.csproj"
+            "E:\\Games\\MIDI\\M.I.D.I\\BussinessLogic.Interface\\BussinessLogic.Interface.csproj": {
+              "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\BussinessLogic.Interface\\BussinessLogic.Interface.csproj"
             },
-            "E:\\Диплом\\M.I.D.I\\BussinessLogic\\BussinessLogic.csproj": {
-              "projectPath": "E:\\Диплом\\M.I.D.I\\BussinessLogic\\BussinessLogic.csproj"
+            "E:\\Games\\MIDI\\M.I.D.I\\BussinessLogic\\BussinessLogic.csproj": {
+              "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\BussinessLogic\\BussinessLogic.csproj"
             },
-            "E:\\Диплом\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj": {
-              "projectPath": "E:\\Диплом\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj"
+            "E:\\Games\\MIDI\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj": {
+              "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess.Interface\\DataAccess.Interface.csproj"
             },
-            "E:\\Диплом\\M.I.D.I\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "E:\\Диплом\\M.I.D.I\\DataAccess\\DataAccess.csproj"
+            "E:\\Games\\MIDI\\M.I.D.I\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "E:\\Games\\MIDI\\M.I.D.I\\DataAccess\\DataAccess.csproj"
             }
           }
         }

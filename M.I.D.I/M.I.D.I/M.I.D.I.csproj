@@ -98,6 +98,9 @@
     <Compile Include="DataModels\MusicModel.cs" />
     <Compile Include="DataModels\MusicListView.cs" />
     <Compile Include="DeviceConnector\DeviceConnector.cs" />
+    <Compile Include="ErrorView\ErrorDialog.xaml.cs">
+      <DependentUpon>ErrorDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Handlers\Button.cs" />
     <Compile Include="Handlers\SplitView.cs" />
     <Compile Include="Infrastructure\DependencyResolver.cs" />
@@ -128,6 +131,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="ErrorView\ErrorDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

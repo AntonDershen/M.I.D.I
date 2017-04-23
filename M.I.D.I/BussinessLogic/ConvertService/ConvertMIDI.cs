@@ -17,9 +17,8 @@ namespace BussinessLogic.ConvertService
         private MidiFile midiFile;
         private long ticksPerQuarter;
         private List<NoteEvent> absoluteNotes;
-
-
         IEnumerable<NoteEntity> Notes { get; set; }
+
         public byte[] Data { get; private set; }
         
         public ConvertMIDI(string Path, bool strictCheck = true)
@@ -62,6 +61,7 @@ namespace BussinessLogic.ConvertService
             }
             return output;
         }
+
         private void BuildAbsoluteNotes()
         {
             absoluteNotes = new List<NoteEvent>();
@@ -81,6 +81,7 @@ namespace BussinessLogic.ConvertService
             }
             absoluteNotes = absoluteNotes.OrderBy(x => x.AbsoluteTime).ToList();
         }
+
         private double GetRealtime(long currentNoteAbsTime)
         {
             var BPM = 120.0;   
@@ -95,6 +96,7 @@ namespace BussinessLogic.ConvertService
             time += ((double)reldelta / ticksPerQuarter) * (60000.0 / BPM);
             return Math.Round(time / 1000.0, 5);
         }
+
         private void BuildTempoList()
         {
             var currentbpm = 120.00;
@@ -127,6 +129,7 @@ namespace BussinessLogic.ConvertService
                 tempoEvents.Add(tempo_event);
             }
         }
+
         internal class TempoEvent
         {
             public long AbsoluteTime { get; set; }
