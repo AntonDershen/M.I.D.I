@@ -10,18 +10,9 @@ namespace BussinessLogic.Interface.Entities
     {
         public int MusicEntityId { get; set; }
         public string Name { get; set; }
+        public string NewPath { get; set; }
         public string Extension { get; set; }
         public DateTime Date { get; set; }
-        public byte[] Content { get; set; }
-        public ConvertedMusicEntity ConvertedMusicEntity { get; set; }
-        public IEnumerable<AlbumEntity> Albums { get; set; }
-    }
-
-    public class ConvertedMusicEntity
-    {
-        public int ConvertedMusicEntityId { get; set; }
-        public DateTime ConvertedDate { get; set; }
-        public IEnumerable<NoteEntity> Notes { get; set; }
     }
 
     public class NoteEntity

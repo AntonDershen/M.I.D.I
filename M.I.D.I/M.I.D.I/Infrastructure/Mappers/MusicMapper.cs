@@ -10,20 +10,22 @@ namespace M.I.D.I.Infrastructure.Mappers
 {
     public  static class MusicMapper
     {
-        public static MusicEntity ToMusicModel(this MusicModel musicEntity)
+        public static MusicEntity ToMusicEntity(this MusicModel musicEntity)
         {
             return new MusicEntity
             {
                 MusicEntityId = musicEntity.MusicEntityId,
-                Name = musicEntity.Name
+                Name = musicEntity.Name,
+                NewPath = musicEntity.NewPath
             };
         }
-        public static MusicModel ToMusicEntity(this MusicEntity musicModel)
+        public static MusicModel ToMusicModel(this MusicEntity musicModel)
         {
             return new MusicModel
             {
                 MusicEntityId = musicModel.MusicEntityId,
-                Name = musicModel.Name
+                Name = musicModel.Name,
+                NewPath = musicModel.NewPath
             };
         }
     }

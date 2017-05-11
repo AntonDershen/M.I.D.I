@@ -15,11 +15,10 @@ namespace BussinessLogic.Interface.Converters
             return new MusicModel
             {
                 MusicModelId = musicEntity.MusicEntityId,
-                Content = musicEntity.Content,
                 Name = musicEntity.Name,
                 Date = musicEntity.Date,
-                Extension = musicEntity.Extension,
-                ConvertedMusicModel = musicEntity.ConvertedMusicEntity.ToConvertedMusicModel()
+                NewPath = musicEntity.NewPath,
+                Extension = musicEntity.Extension
             };
         }
         public static MusicEntity ToMusicEntity(this MusicModel musicModel)
@@ -27,11 +26,10 @@ namespace BussinessLogic.Interface.Converters
             return new MusicEntity
             {
                 MusicEntityId = musicModel.MusicModelId,
-                Content = musicModel.Content,
                 Name = musicModel.Name,
                 Date = musicModel.Date,
                 Extension = musicModel.Extension,
-                ConvertedMusicEntity = musicModel.ConvertedMusicModel.ToConvertedMusicEntity()
+                NewPath = musicModel.NewPath
             };
         }
     }

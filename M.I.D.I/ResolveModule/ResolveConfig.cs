@@ -2,11 +2,10 @@
 using BussinessLogic.Services;
 using DataAccess.Interface.Repositories;
 using DataAccess.Repositories;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using Ninject;
 using DataAccess.Interface.EntityFramework;
-using Microsoft.EntityFrameworkCore;
+using System.Data.Entity;
 
 namespace ResolveModule
 {

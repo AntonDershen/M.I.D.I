@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>2C4EE6718F8DE98211E46E71AFDEABAD1B294CBC2A95F03DF1D5EFEF5D4EE2E9</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>5F6D7918B8B052132BCE4A378E1BFBF9AE5CA32A7DD0D5ED49C745472CA350E1</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>dd67b896-1f71-4ac7-a983-c180c90a7a1f_1.0.0.0_x86__54009kxqm04w4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>dd67b896-1f71-4ac7-a983-c180c90a7a1f_54009kxqm04w4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>dd67b896-1f71-4ac7-a983-c180c90a7a1f</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-23T21:12:51.216</Modified>
+      <Modified>2017-05-09T17:59:08.986</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.exe">
       <PackagePath>entrypoint\M.I.D.I.exe</PackagePath>
-      <Modified>2017-04-23T21:12:36.600</Modified>
+      <Modified>2017-05-09T17:59:08.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dersh\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll">
       <PackagePath>Microsoft.AspNetCore.Hosting.Abstractions.dll</PackagePath>
@@ -651,27 +651,27 @@
       <PackagePath>Microsoft.Maker.Serial.dll</PackagePath>
       <Modified>2016-05-18T08:37:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\BussinessLogic.Interface.dll">
+    <AppxPackagedFile Include="e:\Games\MIDI\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\BussinessLogic.Interface.dll">
       <PackagePath>BussinessLogic.Interface.dll</PackagePath>
-      <Modified>2017-04-23T21:12:27.294</Modified>
+      <Modified>2017-05-09T17:59:03.137</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\ResolveModule.dll">
+    <AppxPackagedFile Include="e:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\ResolveModule.dll">
       <PackagePath>ResolveModule.dll</PackagePath>
-      <Modified>2017-04-23T21:12:30.778</Modified>
+      <Modified>2017-05-09T17:59:05.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\DataAccess.Interface.dll">
+    <AppxPackagedFile Include="e:\Games\MIDI\M.I.D.I\BussinessLogic.Interface\bin\x86\Debug\DataAccess.Interface.dll">
       <PackagePath>DataAccess.Interface.dll</PackagePath>
-      <Modified>2017-04-23T21:12:23.984</Modified>
+      <Modified>2017-05-09T17:59:02.253</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\DataAccess.dll">
+    <AppxPackagedFile Include="e:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\DataAccess.dll">
       <PackagePath>DataAccess.dll</PackagePath>
-      <Modified>2017-04-23T21:12:29.170</Modified>
+      <Modified>2017-05-09T17:59:04.133</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\BussinessLogic.dll">
+    <AppxPackagedFile Include="e:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\BussinessLogic.dll">
       <PackagePath>BussinessLogic.dll</PackagePath>
-      <Modified>2017-04-23T21:12:29.182</Modified>
+      <Modified>2017-05-09T17:59:04.146</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\NAudio.dll">
+    <AppxPackagedFile Include="e:\Games\MIDI\M.I.D.I\ResolveModule\bin\x86\Debug\NAudio.dll">
       <PackagePath>NAudio.dll</PackagePath>
       <Modified>2017-04-17T21:52:34.052</Modified>
     </AppxPackagedFile>
@@ -731,13 +731,13 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\M.I.D.I.xr.xml">
       <PackagePath>M.I.D.I.xr.xml</PackagePath>
-      <Modified>2017-04-17T21:52:37.942</Modified>
+      <Modified>2017-05-09T17:57:30.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\DataAccess.Interface\DataAccess.csproj">
       <PackagePath>DataAccess.Interface\DataAccess.csproj</PackagePath>
       <Modified>2017-04-17T21:52:34.083</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\BussinessLogic\dll\naudio.dll">
+    <AppxPackagedFile Include="e:\Games\MIDI\M.I.D.I\BussinessLogic\dll\naudio.dll">
       <PackagePath>BussinessLogic\dll\naudio.dll</PackagePath>
       <Modified>2017-04-17T21:52:34.052</Modified>
     </AppxPackagedFile>
@@ -804,11 +804,11 @@
     <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-23T21:12:44.843</Modified>
+      <Modified>2017-05-09T17:57:30.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Games\MIDI\M.I.D.I\M.I.D.I\bin\x86\Debug\Core\M.I.D.I.exe">
       <PackagePath>M.I.D.I.exe</PackagePath>
-      <Modified>2017-04-23T21:12:51.202</Modified>
+      <Modified>2017-05-09T17:59:08.975</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

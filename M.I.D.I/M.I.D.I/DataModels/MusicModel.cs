@@ -10,5 +10,6 @@ namespace M.I.D.I.DataModels
     {
         public int MusicEntityId { get; set; }
         public string Name { get; set; }
+        public string NewPath { get; set; }
     }
 }

@@ -1,31 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.Storage.Pickers;
-using Windows.Storage;
 using BussinessLogic.Interface.Services;
 using M.I.D.I.DataModels;
 using M.I.D.I.Infrastructure.Mappers;
 using Ninject;
 using System.Linq;
+using System.Windows;
+using Microsoft.Win32;
+using System.IO;
 
 namespace M.I.D.I
 {
-    public sealed partial class MainPage : Page
+    public sealed partial class MainWindow : Window
     {
         private async void Add_Click(object sender, RoutedEventArgs e)
         {
-            FileOpenPicker fop = new FileOpenPicker();
-            fop.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
-            fop.FileTypeFilter.Add(".mid");
-            fop.SuggestedStartLocation = PickerLocationId.MusicLibrary;
-            IReadOnlyList<StorageFile> files = await fop.PickMultipleFilesAsync();
-            foreach(StorageFile file in files)
+            OpenFileDialog fop = new OpenFileDialog();
+            fop.Filter= "Midi Files (.mid)|*.mid";
+            fop.Multiselect = true;
+            Nullable<bool> result = fop.ShowDialog();
+            if (result == true)
             {
-                IMusicService musicService = dependencyResolver.kernel.Get<IMusicService>();
-                MusicModel musicModel = (await musicService.AddFile(file)).ToMusicEntity();
-                MusicListView.Add(musicModel);
+                foreach (String fileName in fop.FileNames)
+                {
+                    FileInfo fileInfo = new FileInfo(fileName);
+                    IMusicService musicService = dependencyResolver.kernel.Get<IMusicService>();
+                    MusicModel musicModel = (musicService.AddFile(fileInfo)).ToMusicModel();
+                    MusicListView.Add(musicModel);
+                }
             }
         }
         private void Remove_Click(object sender, RoutedEventArgs e)
@@ -36,7 +38,7 @@ namespace M.I.D.I
             {
                 MusicModel model = item as MusicModel;
                 IMusicService musicService = dependencyResolver.kernel.Get<IMusicService>();
-                musicService.RemoveFile(model.MusicEntityId);
+                musicService.RemoveFile(model.ToMusicEntity());
                 MusicListView.Remove(model.MusicEntityId);
             }
         }

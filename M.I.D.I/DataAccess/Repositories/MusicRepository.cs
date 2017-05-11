@@ -19,6 +19,10 @@ namespace DataAccess.Repositories
                 context.Set<MusicModel>().Add(musicModel);
                 context.SaveChanges();
             }
+            catch (System.Data.Entity.Infrastructure.DbUpdateException e)
+            {
+                throw new Exception(e.Message);
+            }
             catch (Exception e)
             {
                 throw new Exception(e.Message);

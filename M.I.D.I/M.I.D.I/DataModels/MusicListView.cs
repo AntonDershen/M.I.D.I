@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using M.I.D.I.Infrastructure.Mappers;
-using Windows.UI.Xaml.Controls;
 using System.Collections.ObjectModel;
+using System.Windows.Controls;
+using System;
 
 namespace M.I.D.I.DataModels
 {
@@ -21,7 +22,7 @@ namespace M.I.D.I.DataModels
         }
         public void Update()
         {
-            var musicModelList = musicService.GetFiles().Select(x => x.ToMusicEntity()).ToList();
+            var musicModelList = musicService.GetFiles().Select(x => x.ToMusicModel()).ToList();
             MusicModelList = new ObservableCollection<MusicModel>();
             foreach (var MusicModel in musicModelList)
             {

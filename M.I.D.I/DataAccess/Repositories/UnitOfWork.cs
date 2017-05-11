@@ -12,7 +12,6 @@ namespace DataAccess.Repositories
     {
         private Context Context { get; set; }
         private IMusicRepository musicRepository;
-
         public IMusicRepository MusicRepository
         {
             get
@@ -22,6 +21,7 @@ namespace DataAccess.Repositories
                 return musicRepository;
             }
         }
+
         public UnitOfWork(Context context)
         {
             Context = context;

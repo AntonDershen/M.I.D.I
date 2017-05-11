@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Windows.Storage;
 using BussinessLogic.Interface.Converters;
 using System.Threading.Tasks;
 using BussinessLogic.Interface.Entities;
@@ -8,6 +7,7 @@ using BussinessLogic.Interface.Services;
 using DataAccess.Interface.Repositories;
 using System;
 using BussinessLogic.ConvertService;
+using System.IO;
 
 namespace BussinessLogic.Services
 {
@@ -18,29 +18,47 @@ namespace BussinessLogic.Services
         {
             this.unitOfWork = unitOfWork;
         }
-        public async Task<MusicEntity> AddFile(StorageFile file)
+        public MusicEntity AddFile(FileInfo file)
         {
-            MusicEntity musicEntity = await file.ConvertStorageFile();
-            ConvertedMusicEntity convertedMusicEntity = GetConvertedMusicEntity(musicEntity, file);
+            MusicEntity musicEntity = file.ConvertFileInfo();
+            musicEntity.NewPath = CopyFile(file);
             musicEntity = unitOfWork.MusicRepository.AddFile(musicEntity.ToMusicModel()).ToMusicEntity();
             unitOfWork.Save();
             return musicEntity;
         }
-        private ConvertedMusicEntity GetConvertedMusicEntity(MusicEntity musicEntity,StorageFile storageFile)
+        private string CopyFile(FileInfo fileInfo)
         {
-            ConvertMIDI convertMIDI = new ConvertMIDI(storageFile.Path);
-            ConvertedMusicEntity convertedMusicEntity = new ConvertedMusicEntity();
-            convertedMusicEntity.ConvertedDate = DateTime.Now;
-            convertedMusicEntity.Notes = convertMIDI.GetNotes();
-            return convertedMusicEntity;
+            string path = Directory.GetCurrentDirectory() + "\\music";
+            if(!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+            string filePath = path + "\\" + fileInfo.Name;
+            int i = 0;
+            while (true)
+            {
+                if(!File.Exists(filePath))
+                {
+                    break;
+                }
+                filePath = path + "\\" + i.ToString() + fileInfo.Name;
+                i++;
+            }
+            fileInfo.CopyTo(filePath);
+            return filePath;
         }
         public IEnumerable<MusicEntity> GetFiles()
         {
-            return unitOfWork.MusicRepository.GetFiles().Select(x=>x.ToMusicEntity());
+            return unitOfWork.MusicRepository.GetFiles().Where(y=>File.Exists(y.NewPath)).Select(x=>x.ToMusicEntity());
         }
-        public void RemoveFile(int fileId)
+        public void RemoveFile(MusicEntity musicEntity)
         {
-            unitOfWork.MusicRepository.RemoveFile(fileId);
+            if (File.Exists(musicEntity.NewPath))
+            {
+                FileInfo fileInfo = new FileInfo(musicEntity.NewPath);
+                fileInfo.Delete();
+            }
+            unitOfWork.MusicRepository.RemoveFile(musicEntity.MusicEntityId);
             unitOfWork.Save();
         }
     }

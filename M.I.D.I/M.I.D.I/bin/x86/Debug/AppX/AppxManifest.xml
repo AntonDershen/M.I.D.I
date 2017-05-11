@@ -144,30 +144,30 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>Microsoft.Maker.Firmata.dll</Path>
-        <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.SystemResetCallbackEventArgs" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.I2cCallbackEventArgs" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.StringCallbackEventArgs" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.CallbackEventArgs" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.SysexCallbackEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.I2cCallbackEventArgs" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.UwpFirmata" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.SystemResetCallbackEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Maker.Firmata.StringCallbackEventArgs" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>Microsoft.Maker.RemoteWiring.dll</Path>
-        <ActivatableClass ActivatableClassId="Microsoft.Maker.RemoteWiring.HardwareProfile" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Maker.RemoteWiring.RemoteDevice" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Maker.RemoteWiring.HardwareProfile" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>Microsoft.Maker.Serial.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.Maker.Serial.NetworkSerial" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Maker.Serial.BleSerial" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Maker.Serial.CurieBleSerial" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Maker.Serial.DfRobotBleSerial" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Maker.Serial.UsbSerial" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.Maker.Serial.NetworkSerial" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.Maker.Serial.BluetoothSerial" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Maker.Serial.CurieBleSerial" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>
@@ -176,11 +176,11 @@
     <build:Item Name="VisualStudio" Version="15.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2017" />
     <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26323.1" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26403.7" />
     <build:Item Name="ProjectGUID" Value="{D8923491-A54D-4308-B0C5-3E612FCB7441}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.26323.1" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="15.0.26403.7" />
     <build:Item Name="MakePri.exe" Version="10.0.14393.795 (rs1_release_sec.170105-1850)" />
   </build:Metadata>
 </Package>

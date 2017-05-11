@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Data.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +10,9 @@ namespace DataAccess.Interface.EntityFramework
     public class Context : DbContext
     {
         public DbSet<MusicModel> MusicModel { get; set; }
-        public Context()
+        public DbSet<AlbumModel> AlbumModel { get; set; }
+        public Context() : base("name=DefaultConnection")
         {
-        }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Filename=./DataBase.db");
         }
     }
 }

@@ -1,12 +1,8 @@
-﻿using BussinessLogic.Interface.Converters;
-using System.Threading.Tasks;
-using BussinessLogic.Interface.Entities;
+﻿using BussinessLogic.Interface.Entities;
 using BussinessLogic.Interface.Services;
-using DataAccess.Interface.Repositories;
 using System;
 using System.Collections.Generic;
 using NAudio.Midi;
-using System.IO;
 using System.Linq;
 
 namespace BussinessLogic.ConvertService
@@ -23,9 +19,6 @@ namespace BussinessLogic.ConvertService
         
         public ConvertMIDI(string Path, bool strictCheck = true)
         {
-            if (!File.Exists(Path))
-                throw new FileNotFoundException(String.Format("Midi file not found at {0}!", Path));
-
             try
             {
                 midiFile = new MidiFile(Path, strictCheck);
