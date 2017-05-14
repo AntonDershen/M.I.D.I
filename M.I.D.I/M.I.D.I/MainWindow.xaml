@@ -4,37 +4,81 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M.I.D.I"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="M.I.D.I" Height="600" Width="800">
-
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="178*"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height="135*"/>
-            <RowDefinition/>
-            <RowDefinition Height="252*"/>
-        </Grid.RowDefinitions>
-        <ListView Name="listView" Margin="29,16,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="427" VerticalAlignment="Top" Loaded="listView_Loaded">
-            <ListView.ItemTemplate>
-                <DataTemplate DataType="dataModels:MusicModel">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="440"/>
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Text="{Binding Path=Name}"/>
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="541,206,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="-0.227,0.85" Click="Add_Click" Grid.Row="6"/>
-        <Button Content="Удалить" HorizontalAlignment="Left" Margin="660,206,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="-0.227,0.85" Click="Remove_Click" Grid.Row="6"/>
-        <Slider HorizontalAlignment="Left" Margin="50,131,0,0" Grid.Row="6" VerticalAlignment="Top" Width="694"/>
-        <Button Content="Синхронизировать" IsEnabled="False" HorizontalAlignment="Left" Margin="50,206,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="-0.227,0.85" Grid.Row="6"/>
-        <Button Content="{StaticResource Play}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="368,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
-        <Button Content="{StaticResource Prev}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="297,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
-        <Button Content="{StaticResource Next}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="439,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
-    </Grid>
+        Title="M.I.D.I" Height="582.667" Width="800.667">
+    <TabControl Margin="0,0,0,-21">
+        <TabItem Header="Композиции">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="171*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="129*"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="264*"/>
+                    <RowDefinition Height="0"/>
+                </Grid.RowDefinitions>
+                <TextBlock Margin="227,10,-227,122"  FontSize="30" FontWeight="Bold" Grid.RowSpan="5"><Run Text="Список композиций"/></TextBlock>
+                <ListView x:Name="listView2" Margin="29,71,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="342" VerticalAlignment="Top" Loaded="listView_Loaded">
+                    <ListView.ItemTemplate>
+                        <DataTemplate DataType="dataModels:MusicModel">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="440"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Name}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Content="Добавить" HorizontalAlignment="Left" Margin="536,186,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="-0.227,0.85" Click="Add_Click" Grid.Row="6" Grid.RowSpan="2"/>
+                <Button Content="Удалить" HorizontalAlignment="Left" Margin="658,186,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="-0.227,0.85" Click="Remove_Click" Grid.Row="6" Grid.RowSpan="2"/>
+                <Slider HorizontalAlignment="Left" Margin="50,131,0,0" Grid.Row="6" VerticalAlignment="Top" Width="694"/>
+                <Button Content="Синхронизировать" IsEnabled="False" HorizontalAlignment="Left" Margin="50,186,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="-0.227,0.85" Grid.Row="6" Grid.RowSpan="2"/>
+                <Button Content="{StaticResource Play}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="368,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
+                <Button Content="{StaticResource Prev}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="297,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
+                <Button Content="{StaticResource Next}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="439,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Альбомы">
+            <StackPanel>
+                <TextBlock Margin="262,15,159,485" FontSize="30" FontWeight="Bold"><Run Text="Список альбомов"/></TextBlock>
+                <ListView x:Name="listView" Margin="29,-471,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="342" VerticalAlignment="Top" Loaded="listView_Loaded">
+                    <ListView.ItemTemplate>
+                        <DataTemplate DataType="dataModels:MusicModel">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="440"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Name}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Content="Синхронизировать" IsEnabled="False" HorizontalAlignment="Left" Margin="50,-76,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="-0.227,0.85"/>
+                <Button Content="Редактировать" IsEnabled="True" HorizontalAlignment="Left" Margin="330,-76,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="-0.227,0.85"/>
+                <Button Content="Добавить" IsEnabled="True" HorizontalAlignment="Left" Margin="520,-76,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="-0.227,0.85"/>
+                <Button Content="Удалить" IsEnabled="True" HorizontalAlignment="Left" Margin="660,-76,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="-0.227,0.85"/>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Настройки">
+            <StackPanel>
+                <TextBlock Margin="224,15,159,485" FontSize="30" FontWeight="Bold"><Run Text="Настройки приложения"/></TextBlock>
+                <CheckBox IsChecked="True" Content="Воспроиводить мелодию на подключенное устройство" UseLayoutRounding="True" Margin="0,-450,380,485" VerticalAlignment="Bottom" Style="{DynamicResource CheckBoxSwitcher}" HorizontalAlignment="Right" Width="282" RenderTransformOrigin="3.033,0.528"/>
+                <TextBlock  Margin="292,-450,280,485" FontSize="20" FontWeight="Bold"><Run Text="Цвет подсветки"/></TextBlock>
+                <xctk:ColorPicker Name="ClrPcker_Background" Margin="267,-480,278,485" IsOpen="True" RenderTransformOrigin="0.5,0.5">
+                    <xctk:ColorPicker.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.143"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </xctk:ColorPicker.RenderTransform>
+                </xctk:ColorPicker>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
 </Window>
