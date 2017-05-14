@@ -82,6 +82,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Theme\MoonUICore.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -119,6 +123,12 @@
       <Project>{3752c070-c293-4f48-afa7-04eb1e10a679}</Project>
       <Name>ResolveModule</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Theme\ButtonPng\next.png" />
+    <Resource Include="Theme\ButtonPng\play.png" />
+    <Resource Include="Theme\ButtonPng\prew.png" />
+    <Resource Include="Theme\ButtonPng\stop.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:M.I.D.I"
         mc:Ignorable="d"
         Title="M.I.D.I" Height="600" Width="800">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="178*"/>
@@ -16,7 +17,7 @@
             <RowDefinition/>
             <RowDefinition Height="252*"/>
         </Grid.RowDefinitions>
-        <ListView Name="listView" Margin="29,50,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="479" VerticalAlignment="Top" Loaded="listView_Loaded">
+        <ListView Name="listView" Margin="29,16,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="427" VerticalAlignment="Top" Loaded="listView_Loaded">
             <ListView.ItemTemplate>
                 <DataTemplate DataType="dataModels:MusicModel">
                     <Grid>
@@ -28,8 +29,12 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="29,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.227,0.85" Click="Add_Click"/>
-        <Button Content="Удалить" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.227,0.85" Click="Remove_Click"/>
-
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="541,206,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="-0.227,0.85" Click="Add_Click" Grid.Row="6"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="660,206,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="-0.227,0.85" Click="Remove_Click" Grid.Row="6"/>
+        <Slider HorizontalAlignment="Left" Margin="50,131,0,0" Grid.Row="6" VerticalAlignment="Top" Width="694"/>
+        <Button Content="Синхронизировать" IsEnabled="False" HorizontalAlignment="Left" Margin="50,206,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="-0.227,0.85" Grid.Row="6"/>
+        <Button Content="{StaticResource Play}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="368,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
+        <Button Content="{StaticResource Prev}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="297,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
+        <Button Content="{StaticResource Next}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="439,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
     </Grid>
 </Window>

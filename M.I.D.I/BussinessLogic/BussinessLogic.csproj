@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConvertService\ConvertMIDI.cs" />
+    <Compile Include="ConvertService\ConvertMp3.cs" />
     <Compile Include="ConvertService\ConvertWav.cs" />
     <Compile Include="ConvertService\WaveFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
