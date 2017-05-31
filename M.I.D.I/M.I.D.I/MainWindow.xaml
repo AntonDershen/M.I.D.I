@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M.I.D.I"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:dataModels="clr-namespace:M.I.D.I.DataModels"
         mc:Ignorable="d"
         Title="M.I.D.I" Height="582.667" Width="800.667">
     <TabControl Margin="0,0,0,-21">
@@ -21,7 +22,7 @@
                     <RowDefinition Height="0"/>
                 </Grid.RowDefinitions>
                 <TextBlock Margin="227,10,-227,122"  FontSize="30" FontWeight="Bold" Grid.RowSpan="5"><Run Text="Список композиций"/></TextBlock>
-                <ListView x:Name="listView2" Margin="29,71,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="342" VerticalAlignment="Top" Loaded="listView_Loaded">
+                <ListView x:Name="listView" Margin="29,71,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="342" VerticalAlignment="Top" Loaded="listView_Loaded">
                     <ListView.ItemTemplate>
                         <DataTemplate DataType="dataModels:MusicModel">
                             <Grid>
@@ -37,15 +38,14 @@
                 <Button Content="Удалить" HorizontalAlignment="Left" Margin="658,186,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="-0.227,0.85" Click="Remove_Click" Grid.Row="6" Grid.RowSpan="2"/>
                 <Slider HorizontalAlignment="Left" Margin="50,131,0,0" Grid.Row="6" VerticalAlignment="Top" Width="694"/>
                 <Button Content="Синхронизировать" IsEnabled="False" HorizontalAlignment="Left" Margin="50,186,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="-0.227,0.85" Grid.Row="6" Grid.RowSpan="2"/>
-                <Button Content="{StaticResource Play}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="368,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
-                <Button Content="{StaticResource Prev}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="297,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
-                <Button Content="{StaticResource Next}" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="439,164,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35"/>
+                <Button Content="{StaticResource Play}" Name="ButtonPlay" Style="{DynamicResource ButtonPlay}" HorizontalAlignment="Left" Margin="367,186,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35" Click="Play_Click"/>
+                <Button Content="{StaticResource Stop}" Name="ButtonPause" Style="{DynamicResource ButtonPlay}" Visibility="Hidden" HorizontalAlignment="Left" Margin="367,186,0,0" Grid.Row="6" VerticalAlignment="Top" Height="35" Width="35" Click="Play_Click"/>
             </Grid>
         </TabItem>
         <TabItem Header="Альбомы">
             <StackPanel>
                 <TextBlock Margin="262,15,159,485" FontSize="30" FontWeight="Bold"><Run Text="Список альбомов"/></TextBlock>
-                <ListView x:Name="listView" Margin="29,-471,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="342" VerticalAlignment="Top" Loaded="listView_Loaded">
+                <ListView x:Name="listView2" Margin="29,-471,0,0" Grid.RowSpan="7" HorizontalAlignment="Left" Width="734" Height="342" VerticalAlignment="Top" Loaded="listView_Loaded">
                     <ListView.ItemTemplate>
                         <DataTemplate DataType="dataModels:MusicModel">
                             <Grid>

@@ -28,10 +28,5 @@ namespace M.I.D.I
             dependencyResolver = new DependencyResolver();
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

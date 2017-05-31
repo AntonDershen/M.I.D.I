@@ -40,6 +40,12 @@ namespace DataAccess.Repositories
                 throw new Exception(e.Message);
             }
         }
+
+        public MusicModel Find(int musicModelId)
+        {
+           return context.MusicModel.Find(musicModelId);
+        }
+
         public void RemoveFile(int fileId)
         {
             context.MusicModel.Remove(context.MusicModel.Find(fileId));

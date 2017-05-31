@@ -6,6 +6,7 @@ using System;
 using Ninject;
 using DataAccess.Interface.EntityFramework;
 using System.Data.Entity;
+using BussinessLogic.PlayMusicService;
 
 namespace ResolveModule
 {
@@ -15,7 +16,7 @@ namespace ResolveModule
         {
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
             kernel.Bind<DbContext>().To<Context>().InSingletonScope();
-
+            kernel.Bind<IPlayMusicService>().To<PlayMusicService>();
             kernel.Bind<IMusicRepository>().To<MusicRepository>();
             kernel.Bind<IMusicService>().To<MusicService>();
         }

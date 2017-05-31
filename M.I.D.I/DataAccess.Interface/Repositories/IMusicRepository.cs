@@ -12,5 +12,6 @@ namespace DataAccess.Interface.Repositories
         MusicModel AddFile(MusicModel musicModel);
         void RemoveFile(int fileId);
         IEnumerable<MusicModel> GetFiles();
+        MusicModel Find(int musicModelId);
     }
 }

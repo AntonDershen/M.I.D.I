@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataAccess.Interface</RootNamespace>
     <AssemblyName>DataAccess.Interface</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
@@ -26,6 +26,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,9 +67,9 @@
   <ItemGroup>
     <Compile Include="EntityFramework\Context.cs" />
     <Compile Include="EntityFramework\MusicModel.cs" />
-    <Compile Include="Migrations\201705111822591_IntToString.cs" />
-    <Compile Include="Migrations\201705111822591_IntToString.Designer.cs">
-      <DependentUpon>201705111822591_IntToString.cs</DependentUpon>
+    <Compile Include="Migrations\201705311115227_work.cs" />
+    <Compile Include="Migrations\201705311115227_work.Designer.cs">
+      <DependentUpon>201705311115227_work.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,8 +103,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705111822591_IntToString.resx">
-      <DependentUpon>201705111822591_IntToString.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705311115227_work.resx">
+      <DependentUpon>201705311115227_work.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
